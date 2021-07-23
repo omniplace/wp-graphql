@@ -46,7 +46,10 @@
     "wp-graphql/wp-graphql-testcase": "~2.1",
     "phpunit/phpunit": "^8.5",
     "simpod/php-coveralls-mirror": "^3.0",
-    "phpstan/extension-installer": "^1.1"
+    "phpstan/extension-installer": "^1.1",
+    "bvanhoekelen/performance": "^2.5.1",
+    "phpbench/phpbench": "1.*",
+    "subiabre/appgati": "dev-master"
   },
   "config": {
     "optimize-autoloader": true,
@@ -61,6 +64,9 @@
     "psr-4": {
       "WPGraphQL\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "WPGraphQL\\Benchmarks\\": "benchmarks/"
   },
   "scripts": {
     "install-test-env": "bash bin/install-test-env.sh",
